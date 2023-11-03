@@ -1,4 +1,4 @@
-especie,ilha,comprimento_bico(mm),profundidade_bico(mm),tamanho_asa(mm),massa_corporal(g),sexo
+especie,ilha,comprimento_bico_mm,profundidade_bico_mm,tamanho_asa_mm,massa_corporal_g,sexo
 Chinstrap,Dream,45.2,16.6,191,3250,Fêmea
 Chinstrap,Dream,49.8,17.3,198,3675,Fêmea
 Adelie,Dream,36,18.5,186,3100,Fêmea

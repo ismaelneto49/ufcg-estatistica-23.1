@@ -1,17 +1,21 @@
 data <- read.csv("/home/ismael/IdeaProjects/ufcg/besteiras/estatistica/penguin.csv")
 
-mean <- mean(data$comprimento_bico.mm.)
-median <- median(data$comprimento_bico.mm.)
-
-calculate_mode <- function(x) {
-  unique_values <- unique(x)
-  value_counts <- table(x)
-  max_count <- max(value_counts)
-  mode_values <- unique_values[value_counts == max_count]
-  return(mode_values)
+calcular_moda <- function(column) {
+  counts <- table(column)
+  mode_value <- names(counts[counts == max(counts)])
+  return(mode_value)
 }
 
-normalizePath("")
+comprimento_bico <- data$comprimento_bico_mm
+massa_corporal <- data$massa_corporal_g
 
-# Example: Calculate the mode of a column named "ColumnName" in your data frame
-modes_of_column <- calculate_mode(data$ColumnName)
+media <- mean(comprimento_bico)
+mediana <- median(comprimento_bico)
+moda <- calcular_moda(comprimento_bico)
+variancia <- var(comprimento_bico)
+desvio_padrao <- sqrt(variancia)
+coeficiente_correlacao <- cor(comprimento_bico, massa_corporal)
+
+histograma <- hist(massa_corporal, breaks = 5, main = "Massa corporal", xlab = "Massa (g)", ylab = "Frequência", col = "lightblue")
+boxplot(massa_corporal, main="Massa corporal", horizontal = TRUE, xlab="Massa (g)", col="lightblue")
+plot(comprimento_bico, massa_corporal, main="Gráfico de Dispersão", xlab="Comprimento do bico", ylab="Massa corporal", col="lightblue", pch=19)

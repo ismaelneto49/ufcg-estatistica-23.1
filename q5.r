@@ -1,0 +1,1 @@
+data <- read.csv("{YOUR-ABSOLUTE-PATH-TO}/penguin.csv")

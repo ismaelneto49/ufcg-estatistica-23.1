@@ -67,7 +67,8 @@ flipper_length_vs_body_mass <- function(penguins) {
 
 # Realizando plot
 flipper_length_vs_body_mass(all_penguin)
-
-lmFlipperLengthBodyMass = lm(flipper_length_mm~body_mass_g, data = all_penguin)
+# Regressão Linear
+lmFlipperLengthBodyMass = lm(body_mass_g~flipper_length_mm, data = all_penguin)
 summary(lmFlipperLengthBodyMass)
+# Plot modelo linear
 abline(lmFlipperLengthBodyMass)

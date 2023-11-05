@@ -1,4 +1,4 @@
-data <- read.csv("/home/cristovao/codes/ufcg/2023.1/estatistica/ufcg-estatistica-23.1/penguin.csv")
+data <- read.csv("/caminho-absoluto-ate-o-arquivo/penguin.csv")
 
 get_t_critico <- function(p, graus_liberdade) {
   # valor hardcoded simulando uma consulta à tabela t-student

@@ -3,7 +3,7 @@ install.packages("dplyr")
 library(dplyr)
 
 # Importando dados
-all_penguin <- read.csv("{YOUR-ABSOLUTE-PATH-TO}/penguin.csv")
+all_penguin <- read.csv("/caminho-absoluto-ate-o-arquivo/penguins_original.csv")
 
 # ESTUDO SOBRE COMPRIMENTO BICO X PROFUNDIDADE BICO
 

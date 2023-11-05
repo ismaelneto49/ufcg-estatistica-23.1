@@ -1,4 +1,4 @@
-data <- read.csv("./penguin.csv")
+data <- read.csv("/caminho-absoluto-ate-o-arquivo/penguin.csv")
 
 comprimento_bico <- data$comprimento_bico_mm
 massa_corporal <- data$massa_corporal_g

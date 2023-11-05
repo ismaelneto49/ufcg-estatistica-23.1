@@ -1,5 +1,5 @@
 # Lê os dados do arquivo CSV.
-data <- read.csv("./penguin.csv")
+data <- read.csv("/caminho-absoluto-ate-o-arquivo/penguin.csv")
 
 # Cria conjuntos diferentes para cada variável numérica.
 com_bic <- data$comprimento_bico_mm

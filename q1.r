@@ -1,4 +1,4 @@
-data <- read.csv("/home/ismael/IdeaProjects/ufcg/besteiras/estatistica/penguin.csv")
+data <- read.csv("/caminho-absoluto-ate-o-arquivo/penguin.csv")
 
 # declaração da função que calcula a moda
 calcular_moda <- function(column) {

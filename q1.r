@@ -19,13 +19,27 @@ variancia <- var(comprimento_bico)
 desvio_padrao <- sqrt(variancia)
 coeficiente_correlacao <- cor(comprimento_bico, massa_corporal)
 
-print("    Média: ", media)
-print("    Mediana: ", mediana)
-print("    Moda: ", moda)
-print("    Variância: ", variancia)
-print("    Desvio padrão: ", desvio_padrao)
-print("    Coeficiente de correlação: ", coeficiente_correlacao)
+print(paste("Média: ", media))
+print(paste("Mediana: ", mediana))
 
+# Tamanho de bico que mais se repete
+print(paste("Moda: ", moda))
+
+print(paste("Variância: ", variancia))
+
+# Avalia a dispersão dos valores em relação à média
+print(paste("Desvio padrão: ", desvio_padrao))
+
+# Como o coeficiente de correlação é maior que zero, temos que há correlação entre as duas variáveis
+# Ou seja, o comprimento de bico aumenta conforme a massa corporal
+print(paste("Coeficiente de correlação: ", coeficiente_correlacao))
+
+# Histograma que separa em 7 classes de massa corporal, cada classe com 500g
 hist(massa_corporal, breaks = 5, main = "Massa corporal", xlab = "Massa (g)", ylab = "Frequência", col = "lightblue")
+
+# Boxplot que mostra a dispersão dos dados de massa corporal dos pinguins
 boxplot(massa_corporal, main="Massa corporal", horizontal = TRUE, xlab="Massa (g)", col="lightblue")
+
+# Gráfico de dispersão que relaciona o comprimento do bixo com a massa corporal dos pinguins
+# evidenciando que, conforme o comprimento de bico aumenta, a massa também
 plot(comprimento_bico, massa_corporal, main="Gráfico de Dispersão", xlab="Comprimento do bico", ylab="Massa corporal", col="lightblue", pch=19)

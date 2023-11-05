@@ -19,12 +19,16 @@ variancia <- var(comprimento_bico)
 desvio_padrao <- sqrt(variancia)
 coeficiente_correlacao <- cor(comprimento_bico, massa_corporal)
 
+# Valor que representa o ponto de equilíbrio dos dados
 print(paste("Média: ", media))
+
+# Valor que divide o conjunto de dados em duas metades iguais
 print(paste("Mediana: ", mediana))
 
 # Tamanho de bico que mais se repete
 print(paste("Moda: ", moda))
 
+# Valor que mede o grau de dispersão dos dados em torno da média
 print(paste("Variância: ", variancia))
 
 # Avalia a dispersão dos valores em relação à média

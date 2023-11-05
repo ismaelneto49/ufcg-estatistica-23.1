@@ -32,7 +32,9 @@ t_critico <- get_t_critico(2*nivel_significancia, 29)
 t_observado <- (media - media_populacional_teste) / (desvio_padrao / sqrt(30))
 
 # Se t_observado <= -t_critico, rejeitamos Ho.
+
 # t_observado não é menor ou igual a -t_critico.
+print(t_observado <= t_critico * (-1))
 # Aceitamos Ho: há evidências de que a média populacional seja maior ou igual a 4500g a um nível de 5%.
 
 # =====================================================================================
@@ -47,7 +49,9 @@ qui_quadrado_critico <- get_qui_quadrado_critico(1-nivel_significancia, 29)
 qui_quadrado_observado <- (29*variancia)/variancia_teste
 
 # Se qui_quadrado_observado <= qui_quadrado_critico, rejeitamos Ho.
+
 # qui_quadrado_observado é menor ou igual a qui_quadrado_critico.
+print(qui_quadrado_observado <= qui_quadrado_critico)
 # Rejeitamos Ho: não há evidências de que a variância populacional seja maior ou igual a 600.000 a um nível de 5%.
 
 
